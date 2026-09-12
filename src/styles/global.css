@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap');
+
+:root {
+  color-scheme: light;
+  font-family: 'Noto Sans TC', 'DM Sans', sans-serif;
+  background-color: #fffdf8;
+  color: #25332b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: #fffdf8;
+  color: #25332b;
+  font-family: 'Noto Sans TC', 'DM Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes loadingMove {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(300%); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-loadingMove {
+  animation: loadingMove 1.5s infinite linear;
+}
+
+/* Clear standard browser horizontal scroll track bars */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Masonry grid helper for more organic card layouts */
+.masonry-grid {
+  column-gap: 1rem;
+}
+@media (min-width: 768px) {
+  .masonry-grid { column-count: 2; }
+}
+@media (min-width: 1280px) {
+  .masonry-grid { column-count: 3; }
+}
+.masonry-item {
+  display: inline-block;
+  width: 100%;
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+/* Simple line-clamp (3 lines) without plugin */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Small button helper to standardize card action sizes */
+.btn-small {
+  padding: 0.45rem 0.8rem !important;
+  font-size: 0.75rem !important;
+  border-radius: 0.75rem !important;
+}
