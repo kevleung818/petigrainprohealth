@@ -151,7 +151,39 @@ export default function ProductDetailPage() {
           </section>
           </div>
         ) : null}
-        {['immu-guard', 'oti-dor'].includes(product.slug) ? (
+        {product.slug === 'oti-dor' ? (
+          <section className="mt-10 overflow-hidden border border-cyberBorder bg-white">
+            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
+              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">OTI-DOR · SUCCESS CASE</p>
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+                <div>
+                  <h2 className="text-3xl font-extrabold text-cyberBlack">耳部護理十九天成功個案</h2>
+                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">個案記錄毛孩使用朵清新前後的耳部狀況，展示連續飲用 19 天期間由 4 May 至 23 May 的改善進程。</p>
+                </div>
+                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
+                  <p className="text-xs font-bold text-cyberGray">飲用時間</p>
+                  <p className="mt-1 text-2xl font-black text-cyberPurple">19 天</p>
+                </div>
+              </div>
+            </div>
+            <div className="grid gap-5 p-5 sm:grid-cols-3 sm:p-8">
+              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
+                <img src="/demo/Oti 1.png" alt="朵清新個案 4 May 飲用前" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">4 May · 飲用前</figcaption>
+              </figure>
+              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
+                <img src="/demo/Oti 2.png" alt="朵清新個案 12 May 飲用第 8 天" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">12 May · 飲用第 8 天</figcaption>
+              </figure>
+              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
+                <img src="/demo/Oti 3.png" alt="朵清新個案 23 May 飲用第 19 天" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">23 May · 飲用第 19 天</figcaption>
+              </figure>
+            </div>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作耳部護理進程記錄參考，不能代替獸醫診斷或治療；如有耳部紅腫、異味、分泌物或持續搔癢，請先諮詢獸醫。</p>
+          </section>
+        ) : null}
+        {product.slug === 'immu-guard' ? (
           <section className="mt-10 overflow-hidden border border-cyberBorder bg-white">
             <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
               <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">{product.english} · SUCCESS CASE</p>
