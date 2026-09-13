@@ -22,15 +22,16 @@ export default function ProductDetailPage() {
           <div className="grid lg:grid-cols-[0.8fr_1.2fr]">
             <div className="flex min-h-[320px] flex-col justify-center bg-cyberPanelSoft px-7 py-12 sm:px-12">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyberGray">{product.english}</p>
-              <h1 className="mt-3 text-5xl font-extrabold tracking-tight text-cyberBlack">{product.name}</h1>
-              <p className="mt-5 inline-flex self-start bg-cyberBlack px-4 py-2 text-base font-bold text-white">{product.strapline}</p>
-              <p className="mt-8 text-sm font-bold text-cyberGray">容量 {product.capacity}</p>
+              <h1 className="mt-3 text-5xl font-extrabold tracking-tight text-cyberBlack">{product.name}{product.slug === 'bri-sol' || product.slug === 'oti-dor' ? '™' : ''}</h1>
+              <p className="mt-3 text-lg font-black text-cyberGray">發明專利 {product.note.replace(/^.*?發明專利\s*/, '').trim()}</p>
+              <p className="mt-5 inline-flex self-start bg-cyberBlack px-4 py-2 text-lg font-bold text-white">{product.strapline}</p>
+              <p className="mt-8 text-base font-bold text-cyberGray">容量 {product.capacity}</p>
             </div>
             <div className="px-7 py-10 sm:px-12 sm:py-14">
-              <p className="inline-flex bg-cyberPanelSoft px-3 py-1 text-sm font-bold text-cyberBlack">產品簡介</p>
+              <p className="inline-flex bg-cyberPanelSoft px-4 py-2 text-base font-bold text-cyberBlack">產品簡介</p>
               <p className="mt-5 text-base leading-8 text-cyberGray">{product.description}</p>
               <div className="mt-8 border-t border-cyberBorder pt-7">
-                <h2 className="text-xl font-bold text-cyberBlack">{product.badge}</h2>
+                <h2 className="text-2xl font-bold text-cyberBlack">{product.badge}</h2>
                 <ul className="mt-4 space-y-3 text-sm leading-7 text-cyberGray">
                   {product.benefits.map((benefit) => <li key={benefit}>★ {benefit}</li>)}
                 </ul>
@@ -40,7 +41,7 @@ export default function ProductDetailPage() {
           <div className="grid gap-8 border-t border-cyberBorder px-7 py-9 sm:px-12 lg:grid-cols-3">
             <div><h2 className="font-bold text-cyberBlack">適合範圍</h2><p className="mt-2 text-sm leading-7 text-cyberGray">{product.suitable}</p></div>
             <div><h2 className="font-bold text-cyberBlack">主要成分</h2><p className="mt-2 text-sm leading-7 text-cyberGray">{product.ingredients}</p></div>
-            <div><h2 className="font-bold text-cyberBlack">使用方法</h2><p className="mt-2 text-sm leading-7 text-cyberGray">{product.usage}</p><p className="mt-3 text-xs leading-5 text-cyberGrayMuted">{product.note}</p></div>
+            <div><h2 className="font-bold text-cyberBlack">使用方法</h2><p className="mt-2 text-sm leading-7 text-cyberGray">{product.usage}</p></div>
           </div>
         </section>
         {product.slug === 'bri-sol' ? (

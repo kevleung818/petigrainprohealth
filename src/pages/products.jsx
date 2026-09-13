@@ -86,8 +86,9 @@ function ProductCard({ product }) {
       <div className="flex flex-wrap items-start justify-between gap-4 border-b border-cyberBorder px-6 pb-5 pt-6 sm:px-7">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyberGray">{product.english}</p>
-          <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-cyberBlack">{product.name}</h2>
-          <p className="mt-2 inline-block bg-cyberBlack px-3 py-1 text-sm font-bold text-white">{product.strapline}</p>
+          <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-cyberBlack">{product.name}{product.slug === 'bri-sol' || product.slug === 'oti-dor' ? '™' : ''}</h2>
+          <p className="mt-3 text-base font-black text-cyberGray">發明專利 {product.note.replace(/^.*?發明專利\s*/, '').trim()}</p>
+          <p className="mt-2 inline-block bg-cyberBlack px-3 py-1 text-base font-bold text-white">{product.strapline}</p>
         </div>
         <div className="text-right text-xs font-bold text-cyberGray">
           <span className="block text-cyberPurple">容量</span>
@@ -135,10 +136,10 @@ export default function ProductsPage() {
           <p className="text-sm font-bold tracking-widest text-cyberPurple">全天然科學寵物護理</p>
           <h1 className="mt-3 max-w-4xl text-4xl font-extrabold leading-tight text-cyberBlack sm:text-5xl">全方位天然健康產品</h1>
           <p className="mt-5 max-w-3xl text-base leading-8 text-cyberGray">以天然植物萃取、科研實證及清晰成分為基礎，為毛孩提供眼睛、耳道、免疫、肝臟及腎臟的精準日常護理。</p>
-          <div className="mt-8 flex flex-wrap gap-3 text-xs font-bold text-cyberGray">
-            <span className="border border-cyberBorder bg-white px-4 py-2">澳洲進口</span>
-            <span className="border border-cyberBorder bg-white px-4 py-2">天然植物配方</span>
-            <span className="border border-cyberBorder bg-white px-4 py-2">大學生物科研測試</span>
+          <div className="mt-8 flex flex-wrap gap-3 text-sm font-bold text-cyberGray">
+            <span className="border border-cyberBorder bg-white px-5 py-2.5">澳洲進口</span>
+            <span className="border border-cyberBorder bg-white px-5 py-2.5">天然植物配方</span>
+            <span className="border border-cyberBorder bg-white px-5 py-2.5">大學生物科研測試</span>
           </div>
         </section>
 
