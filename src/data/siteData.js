@@ -19,7 +19,8 @@ export const SCENE_LIBRARY = [
   { id: 'gs6', category: 'TV Drama', session: 'Premiere', title: 'WHISPERS IN THE WARD', desc: 'An emotional TV drama unfolding in a hospital ward, with complex character dynamics.', roles: '2 roles', views: '43,500', image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80' },
   { id: 'gs7', category: 'Sports Event', session: 'Workshop', title: 'CHAMPIONSHIP CLASH: FINAL QUARTER', desc: 'An intense sports event scene capturing the final moments of a championship game.', roles: '0 roles', views: '18,200', image: 'https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&w=900&q=80' },
   { id: 'gs8', category: 'Virtual Comic', session: 'Film Lab', title: 'PANEL 42: THE AWAKENING', desc: 'A virtual comic-style scene exploring a superhero origin story, AI-generated.', roles: '0 roles', views: '39,800', image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80' },
-  { id: 'gs9', category: 'Circus Art', session: 'Live Event', title: 'MIDNIGHT CARNIVAL SPECTACULAR', desc: 'A whimsical circus and performance art scene full of acrobatics and color.', roles: '1 role', views: '12,900', image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80' }
+  { id: 'gs9', category: 'Circus Art', session: 'Live Event', title: 'MIDNIGHT CARNIVAL SPECTACULAR', desc: 'A whimsical circus and performance art scene full of acrobatics and color.', roles: '1 role', views: '12,900', image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80' },
+  { id: 'gs10', category: 'Success Case', session: 'Success Case', title: 'FOUR-DAY RECOVERY: A SUCCESS CASE', desc: 'A documented success case showing the before-and-after result after four days of treatment.', roles: '0 roles', views: '1,240', image: '/demo/four-day-recovery-day-1.png', images: ['/demo/four-day-recovery-day-1.png', '/demo/four-day-recovery-day-4.png'] }
 ];
 
 export const SCENE_CATEGORIES = [
@@ -32,7 +33,8 @@ export const SCENE_CATEGORIES = [
   'TV Drama',
   'Sports Event',
   'Virtual Comic',
-  'Circus Art'
+  'Circus Art',
+  'Success Case'
 ];
 
 export const SCENE_SESSIONS = [
@@ -40,7 +42,8 @@ export const SCENE_SESSIONS = [
   'Premiere',
   'Live Event',
   'Workshop',
-  'Film Lab'
+  'Film Lab',
+  'Success Case'
 ];
 
 export const MERCH_ITEMS = [

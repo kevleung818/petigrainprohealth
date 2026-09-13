@@ -5,9 +5,7 @@ import { clearMemberMode, getAuthRedirectTarget, getMemberSession, getMemberToke
 
 const NAV = [
   { key: 'story', label: '品牌故事', href: '/#story' },
-  { key: 'products', label: '整全天然健康產品', href: '/products' },
-  { key: 'cases', label: '護理個案', href: '/#cases' },
-  { key: 'contact', label: '聯絡我們', href: '/#contact' }
+  { key: 'products', label: '整全天然健康產品', href: '/products' }
 ];
 const PRODUCT_LINKS = [
   { label: '添麗輝 Bri-Sol', href: '/product/bri-sol' },
@@ -116,7 +114,7 @@ export default function Layout({ children }) {
           <div className="flex items-center gap-8">
             <div className="flex items-center gap-2">
               <Link href="/" className="text-lg font-extrabold tracking-wide text-cyberBlack">寵悅康<sup className="text-2xs">TM</sup></Link>
-              <span className="text-2xs font-semibold tracking-wide text-cyberPurple">PETIGRAIN</span>
+              <span className="text-lg font-semibold tracking-wide text-cyberPurple">PETIGRAIN</span>
             </div>
             <nav aria-label="Primary site navigation" className="hidden items-center gap-5 text-3xs uppercase tracking-wider md:flex">
               {NAV.map((item) => item.key === 'products' ? (
@@ -158,16 +156,7 @@ export default function Layout({ children }) {
                   Log Out
                 </button>
               </div>
-            ) : (
-              <div className="hidden items-center gap-2 sm:flex">
-                <Link href="/products" className="border border-cyberBorder bg-white px-4 py-2 text-sm font-bold text-cyberBlack transition hover:border-cyberPurple">
-                  天然健康產品
-                </Link>
-                <Link href="/#contact" className="bg-cyberPurple px-4 py-2 text-sm font-bold text-white transition hover:bg-cyberPurpleSoft">
-                  聯絡我們
-                </Link>
-              </div>
-            )}
+            ) : null}
           </div>
         </div>
         <div

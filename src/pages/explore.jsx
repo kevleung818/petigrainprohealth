@@ -274,7 +274,15 @@ export default function ExplorePage() {
             {visibleScenes.map((scene) => (
               <article key={scene.id} className="masonry-item group overflow-hidden rounded-3xl border border-white/10 bg-cyberPanelDeep shadow-glow-sm transition duration-300 hover:-translate-y-1">
                 <div className="relative overflow-hidden">
-                  <img src={scene.image} alt={scene.title} className="w-full object-cover transition duration-500 group-hover:scale-105 max-h-[420px]" />
+                  {scene.images?.length > 1 ? (
+                    <div className="grid grid-cols-2 gap-1">
+                      {scene.images.map((image, index) => (
+                        <img key={image} src={image} alt={`${scene.title} ${index === 0 ? 'before' : 'after'}`} className="h-56 w-full object-cover transition duration-500 group-hover:scale-105" />
+                      ))}
+                    </div>
+                  ) : (
+                    <img src={scene.image} alt={scene.title} className="w-full object-cover transition duration-500 group-hover:scale-105 max-h-[420px]" />
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
                   <div className="absolute left-4 top-4 flex flex-wrap gap-2">
                     <span className="rounded-full bg-cyberPurple/90 px-3 py-1 text-2xs font-black uppercase tracking-wider text-white">{scene.category}</span>
@@ -324,7 +332,15 @@ export default function ExplorePage() {
               </button>
             </div>
             <div className="mt-4 overflow-hidden rounded-3xl border border-white/10">
-              <img src={previewScene.image} alt={previewScene.title} className="h-56 w-full object-cover" />
+              {previewScene.images?.length > 1 ? (
+                <div className="grid grid-cols-2 gap-1">
+                  {previewScene.images.map((image, index) => (
+                    <img key={image} src={image} alt={`${previewScene.title} ${index === 0 ? 'before' : 'after'}`} className="h-56 w-full object-cover" />
+                  ))}
+                </div>
+              ) : (
+                <img src={previewScene.image} alt={previewScene.title} className="h-56 w-full object-cover" />
+              )}
             </div>
             <p className="mt-4 text-sm leading-7 text-cyberGray">{previewScene.desc}</p>
             <div className="mt-5 flex flex-wrap gap-3">
