@@ -74,7 +74,33 @@ export default function ProductDetailPage() {
           </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
             <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
-              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL · SUCCESS CASE 02</p>
+              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL · DOG SUCCESS STORY</p>
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+                <div>
+                  <h2 className="text-3xl font-extrabold text-cyberBlack">狗狗眼部 30 天改善個案</h2>
+                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">這個案例記錄狗狗在持續食用添麗輝 30 天後，眼部紅腫與發炎明顯改善，展示開始護理前與 30 天後的對比。</p>
+                </div>
+                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
+                  <p className="text-xs font-bold text-cyberGray">飲用時間</p>
+                  <p className="mt-1 text-2xl font-black text-cyberPurple">30 天</p>
+                </div>
+              </div>
+            </div>
+            <div className="grid gap-5 p-5 sm:grid-cols-2 sm:p-8">
+              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
+                <img src="/demo/Brisol dog before.png" alt="狗狗飲用添麗輝前" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">Before · 開始前</figcaption>
+              </figure>
+              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
+                <img src="/demo/Brisol dog 30 days.png" alt="狗狗飲用添麗輝 30 天後" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">30 days after · 30 天後</figcaption>
+              </figure>
+            </div>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
+          </section>
+          <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
+            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
+              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL · SUCCESS CASE 03</p>
               <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
                 <div>
                   <h2 className="text-3xl font-extrabold text-cyberBlack">幼貓眼部四天改善個案</h2>
