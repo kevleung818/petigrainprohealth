@@ -19,7 +19,7 @@ export default function HomePage() {
               <p className="mt-6 max-w-lg text-base leading-8 text-cyberGray">Petigrain 創辦人 Dr. Lai，自 2007 年起研發天然植物萃取物結合現代科研實證，開拓安全有效的整全天然健康護理系列。</p>
             </div>
           </div>
-          <img className="h-full min-h-[380px] w-full object-cover" src="/demo/IMG_4355.jpeg" alt="被安心照顧的貓咪" />
+          <img className="h-full min-h-[380px] w-full object-contain bg-cyberPanelSoft" src="/demo/home cat.png" alt="被安心照顧的貓咪" />
         </section>
 
         <section id="story" className="grid gap-10 px-2 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
@@ -48,7 +48,7 @@ export default function HomePage() {
         </section>
 
         <section id="cases" className="grid overflow-hidden bg-cyberPanelSoft lg:grid-cols-2">
-          <img className="h-72 w-full object-cover lg:h-full" src="/demo/IMG_2003.jpeg" alt="接受悉心護理的小狗" />
+          <img className="h-72 w-full object-contain bg-cyberPanelSoft lg:h-full" src="/demo/home dog.png" alt="接受悉心護理的小狗" />
           <div className="px-7 py-14 sm:px-12 lg:px-16">
             <p className="text-sm font-bold tracking-widest text-cyberPurple">品牌承諾</p>
             <h2 className="mt-3 text-3xl font-extrabold text-cyberBlack">寵悅康 Petigrain<sup className="text-xs">TM</sup></h2>

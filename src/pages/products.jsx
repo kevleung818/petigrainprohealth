@@ -46,7 +46,7 @@ export const PRODUCTS = [
     suitable: '免疫力、皮膚、口腔、呼吸與腸胃健康支援',
     ingredients: '甜杏仁油、酪梨油、小麥胚芽油、墨角蘭、花梨木、絲柏、天竺葵、檀香',
     usage: '按日常需要使用，請遵照專業人士建議。',
-    note: '大學生物科研測試 · CN ZL202180061153.5 · HK S01004 · TW I833096'
+    note: ''
   },
   {
     slug: 'hepa-guard',
@@ -76,7 +76,7 @@ export const PRODUCTS = [
     suitable: '腎臟健康、熟齡情緒、體力與手足協調支援',
     ingredients: '甘菊純露及迷迭香純露',
     usage: '滴在水中飲用。',
-    note: '發明專利 CN ZL202180061153.5 · HK S01004 · TW I833096'
+    note: '發明專利 大學生物科研測試 · CN ZL202180061153.5 · HK S01004 · TW I833096'
   }
 ];
 
@@ -87,7 +87,7 @@ function ProductCard({ product }) {
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyberGray">{product.english}</p>
           <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-cyberBlack">{product.name}{product.slug === 'bri-sol' || product.slug === 'oti-dor' ? '™' : ''}</h2>
-          <p className="mt-3 text-base font-black text-cyberGray">發明專利 {product.note.replace(/^.*?發明專利\s*/, '').trim()}</p>
+          {product.note ? <p className="mt-3 text-base font-black text-cyberGray">發明專利 {product.note.replace(/^.*?發明專利\s*/, '').trim()}</p> : null}
           <p className="mt-2 inline-block bg-cyberBlack px-3 py-1 text-base font-bold text-white">{product.strapline}</p>
         </div>
         <div className="text-right text-xs font-bold text-cyberGray">
