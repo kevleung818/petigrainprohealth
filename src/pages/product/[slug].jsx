@@ -46,32 +46,6 @@ export default function ProductDetailPage() {
         </section>
         {product.slug === 'bri-sol' ? (
           <div>
-          <section className="mt-10 overflow-hidden border border-cyberBorder bg-white">
-            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
-              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL · SUCCESS CASE 03</p>
-              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
-                <div>
-                  <h2 className="text-3xl font-extrabold text-cyberBlack">四天護理改善個案</h2>
-                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">以下個案記錄毛孩使用添麗輝後的眼部狀況變化，展示第一天與連續四天護理後的對比。</p>
-                </div>
-                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
-                  <p className="text-xs font-bold text-cyberGray">護理時間</p>
-                  <p className="mt-1 text-2xl font-black text-cyberPurple">4 天</p>
-                </div>
-              </div>
-            </div>
-            <div className="grid gap-5 p-5 sm:grid-cols-2 sm:p-8">
-              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/four-day-recovery-day-4.png" alt="添麗輝個案 4 days treatment" className="h-72 w-full object-cover sm:h-80" />
-                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">4 days treatment · 四天後</figcaption>
-              </figure>
-              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/four-day-recovery-day-1.png" alt="添麗輝個案 Day 1" className="h-72 w-full object-cover sm:h-80" />
-                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">Day 1 · 開始護理</figcaption>
-              </figure>
-            </div>
-            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作護理前後記錄參考，實際效果會因毛孩狀況而異；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
-          </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
             <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
               <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL · DOG SUCCESS STORY</p>
@@ -97,58 +71,6 @@ export default function ProductDetailPage() {
               </figure>
             </div>
             <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
-          </section>
-          <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
-            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
-              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL · SUCCESS CASE 03</p>
-              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
-                <div>
-                  <h2 className="text-3xl font-extrabold text-cyberBlack">幼貓眼部四天改善個案</h2>
-                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">另一個添麗輝護理個案，記錄幼貓在四天護理期間的眼部狀況變化，提供清晰的前後對比。</p>
-                </div>
-                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
-                  <p className="text-xs font-bold text-cyberGray">護理時間</p>
-                  <p className="mt-1 text-2xl font-black text-cyberPurple">4 天</p>
-                </div>
-              </div>
-            </div>
-            <div className="grid gap-5 p-5 sm:grid-cols-2 sm:p-8">
-              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/bri-sol-kitten-case-day-1.png" alt="添麗輝幼貓個案 Day 1" className="h-72 w-full object-cover sm:h-80" />
-                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">Day 1 · 開始護理</figcaption>
-              </figure>
-              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/bri-sol-kitten-case-day-4.png" alt="添麗輝幼貓個案 4 days treatment" className="h-72 w-full object-cover sm:h-80" />
-                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">4 days treatment · 四天後</figcaption>
-              </figure>
-            </div>
-            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作護理前後記錄參考，實際效果會因毛孩狀況而異；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
-          </section>
-          <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
-            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
-              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL · SUCCESS CASE 03</p>
-              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
-                <div>
-                  <h2 className="text-3xl font-extrabold text-cyberBlack">狗狗眼部護理十五天個案</h2>
-                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">這個個案記錄狗狗眼部受傷後使用添麗輝的護理過程，展示開始護理與十五天後的外觀對比。</p>
-                </div>
-                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
-                  <p className="text-xs font-bold text-cyberGray">護理時間</p>
-                  <p className="mt-1 text-2xl font-black text-cyberPurple">15 天</p>
-                </div>
-              </div>
-            </div>
-            <div className="grid gap-5 p-5 sm:grid-cols-2 sm:p-8">
-              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/bri-sol-dog-eye-case-day-1.png" alt="添麗輝狗狗眼部個案 Day 1" className="h-72 w-full object-cover sm:h-80" />
-                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">Day 1 · 開始護理</figcaption>
-              </figure>
-              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/bri-sol-dog-eye-case-day-15.png" alt="添麗輝狗狗眼部個案 15 days treatment" className="h-72 w-full object-cover sm:h-80" />
-                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">15 days treatment · 十五天後</figcaption>
-              </figure>
-            </div>
-            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；眼部受傷、混濁、疼痛或分泌物異常時，請立即諮詢獸醫。</p>
           </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
             <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
