@@ -7,16 +7,16 @@ export const PRODUCTS = [
     slug: 'bri-sol',
     name: '添麗輝',
     english: 'Bri-Sol',
-    strapline: '抗眼衰老護眼液',
+    strapline: '抗衰老護眼液',
     colour: 'border-sky-400',
     badge: '護理眼睛健康',
-    capacity: '10ml',
-    description: '添麗輝抗衰老護眼液採用澳洲草本製成，專為眼睛日常保養研發。成份溫和，有助促進眼周微循環，舒緩眼部乾澀、疲勞感與隨年齡產生的沉重負擔，維持雙眼清透晶亮。',
+    capacity: '10 ml',
+    description: '「添麗輝TM」抗衰老護眼液，採用澳洲草本製成，專為眼睛日常保養及護理眼睛研發，以應付隨年齡增長或體康下降以及環境因素影響眼睛健康問題。',
     benefits: ['舒緩眼部乾澀及疲勞', '促進眼周微循環', '維持雙眼清透晶亮'],
     suitable: '結膜炎、眼分泌物、眼乾、紅筋、飛蚊',
     ingredients: '鹽水、甘菊花露、植物甘油、蘆薈、花梨木、甘菊、紅桃金孃、薰衣草、絲柏及迷迭香抗氧化劑',
     usage: '每天使用 2-3 次，每次 2 至 3 滴或按需要調整。',
-    note: '發明專利 HK30122362 · 澳洲草本配方'
+    note: '發明專利 HK30122362 · 天然草本配方'
   },
   {
     slug: 'oti-dor',
