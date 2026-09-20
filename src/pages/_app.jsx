@@ -16,12 +16,14 @@ export default function App({ Component, pageProps }) {
         <meta property="og:description" content="以天然植物萃取結合科研實證，守護香港毛孩的健康生活。" />
         <meta property="og:site_name" content="寵悅康 Petigrain" />
         <meta property="og:locale" content="zh_HK" />
-        <meta property="og:image" content="/demo/demo-featured-1.jpg" />
+        <meta property="og:image" content="/demo/IMG_4355%20(1).jpeg" />
+        <meta property="og:image:alt" content="寵悅康照顧中的貓咪" />
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="寵悅康 Petigrain | 天然科學護理" />
         <meta name="twitter:description" content="以天然植物萃取結合科研實證，守護香港毛孩的健康生活。" />
-        <meta name="twitter:image" content="/demo/demo-featured-1.jpg" />
+        <meta name="twitter:image" content="/demo/IMG_4355%20(1).jpeg" />
       </Head>
       <Component {...pageProps} />
     </>
