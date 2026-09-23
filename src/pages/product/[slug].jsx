@@ -4,6 +4,8 @@ import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
 import { PRODUCTS } from '../products';
 
+const SUCCESS_STORY_CREDIT = '圖片由義工領養人提供';
+
 export default function ProductDetailPage() {
   const router = useRouter();
   const product = PRODUCTS.find((item) => item.slug === router.query.slug);
@@ -70,7 +72,7 @@ export default function ProductDetailPage() {
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第30天 - 護理後狀況</figcaption>
               </figure>
             </div>
-            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
           </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
             <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
@@ -96,7 +98,7 @@ export default function ProductDetailPage() {
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第7天 - 護理後狀況</figcaption>
               </figure>
             </div>
-            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
           </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
             <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
@@ -122,7 +124,7 @@ export default function ProductDetailPage() {
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第21天 - 護理後狀況</figcaption>
               </figure>
             </div>
-            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作食用前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作食用前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
           </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
             <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
@@ -160,7 +162,7 @@ export default function ProductDetailPage() {
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">及後眼睛清晰明亮</figcaption>
               </figure>
             </div>
-            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
           </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
             <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
@@ -182,7 +184,7 @@ export default function ProductDetailPage() {
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第1天至第4天 - 改善記錄</figcaption>
               </figure>
             </div>
-            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
           </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
             <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
@@ -204,7 +206,7 @@ export default function ProductDetailPage() {
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第1天至第30天 - 改善記錄</figcaption>
               </figure>
             </div>
-            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
           </section>
           </div>
         ) : null}
@@ -237,7 +239,7 @@ export default function ProductDetailPage() {
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">23 May · 塗用第 19 天</figcaption>
               </figure>
             </div>
-            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作耳部護理進程記錄參考，不能代替獸醫診斷或治療；如有耳部紅腫、異味、分泌物或持續搔癢，請先諮詢獸醫。</p>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作耳部護理進程記錄參考，不能代替獸醫診斷或治療；如有耳部紅腫、異味、分泌物或持續搔癢，請先諮詢獸醫。</p>
           </section>
         ) : null}
         {product.slug === 'immu-guard' ? (
@@ -269,7 +271,7 @@ export default function ProductDetailPage() {
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">20 days later · 二十天後</figcaption>
               </figure>
             </div>
-            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重皮膚問題，請先諮詢獸醫。</p>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重皮膚問題，請先諮詢獸醫。</p>
           </section>
         ) : null}
         {product.slug === 'immu-guard' ? (
@@ -301,7 +303,7 @@ export default function ProductDetailPage() {
               <div className="border border-cyberBorder bg-cyberPanelSoft px-4 py-3"><p className="text-xs text-cyberGray">11 天</p><p className="mt-1 font-bold text-cyberBlack">腳趾表皮結痂修復中</p></div>
               <div className="border border-cyberBorder bg-cyberPanelSoft px-4 py-3"><p className="text-xs text-cyberGray">34 天</p><p className="mt-1 font-bold text-cyberBlack">腳趾清晰長回</p></div>
             </div>
-            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作護理進程記錄參考，不能代替獸醫診斷或治療；如有腳趾感染、發炎或傷口問題，請先諮詢獸醫。</p>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理進程記錄參考，不能代替獸醫診斷或治療；如有腳趾感染、發炎或傷口問題，請先諮詢獸醫。</p>
           </section>
         ) : null}
         {product.slug === 'hepa-guard' ? (
@@ -334,7 +336,7 @@ export default function ProductDetailPage() {
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">服用 60 天後 · 毛毛重新長毛</figcaption>
               </figure>
             </div>
-            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有嚴重皮炎、脫毛或皮膚異常，請先諮詢獸醫。</p>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有嚴重皮炎、脫毛或皮膚異常，請先諮詢獸醫。</p>
           </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
             <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
@@ -360,7 +362,7 @@ export default function ProductDetailPage() {
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">服用 30 天後 · 改善記錄</figcaption>
               </figure>
             </div>
-            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續皮膚問題，請先諮詢獸醫。</p>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續皮膚問題，請先諮詢獸醫。</p>
           </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
             <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
@@ -420,7 +422,7 @@ export default function ProductDetailPage() {
               </figure>
             </div>
             <blockquote className="mx-7 mb-7 border-l-2 border-cyberPurple px-5 text-base font-bold leading-8 text-cyberBlack sm:mx-10">「狗狗中風後活動不便，持續食用 11 天後，精神及活動狀況都有改善。」</blockquote>
-            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片及描述只作觀察記錄參考，不能代替獸醫診斷或治療；中風後或出現持續行動異常時，請先諮詢獸醫。</p>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片及描述只作觀察記錄參考，不能代替獸醫診斷或治療；中風後或出現持續行動異常時，請先諮詢獸醫。</p>
           </section>
         ) : null}
       </div>

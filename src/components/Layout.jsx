@@ -5,7 +5,7 @@ import { clearMemberMode, getAuthRedirectTarget, getMemberSession, getMemberToke
 
 const NAV = [
   { key: 'story', label: '品牌故事', href: '/#story' },
-  { key: 'products', label: '整全天然健康產品', href: '/products' }
+  { key: 'products', label: '產品資料', href: '/products' }
 ];
 const PRODUCT_LINKS = [
   { label: '添麗輝 Bri-Sol', href: '/product/bri-sol' },
@@ -141,7 +141,7 @@ export default function Layout({ children }) {
               aria-controls="mobile-menu"
                 className="border border-cyberBorder bg-white px-4 py-2 text-sm font-bold text-cyberBlack transition hover:border-cyberPurple focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyberPurple md:hidden"
             >
-              {mobileMenuOpen ? 'Close' : 'Menu'}
+              {mobileMenuOpen ? 'Close' : '產品資料'}
             </button>
             {isMember ? (
               <div className="hidden items-center gap-3 sm:flex">
