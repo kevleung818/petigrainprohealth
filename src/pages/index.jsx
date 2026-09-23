@@ -47,9 +47,9 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section id="cases" className="grid overflow-hidden bg-cyberPanelSoft lg:grid-cols-2">
-          <img className="h-28 w-full object-contain bg-cyberPanelSoft sm:h-32 lg:h-48" src="/demo/IMG_2003 (1).jpeg" alt="接受悉心護理的小狗" />
-          <div className="px-7 py-7 sm:px-12 lg:px-16">
+        <section id="cases" className="grid overflow-hidden border border-cyberBorder bg-cyberPanelSoft lg:grid-cols-[0.62fr_1fr]">
+          <img className="block h-full min-h-[18rem] w-full object-cover bg-cyberPanelSoft" src="/demo/IMG_2003 (1).jpeg" alt="接受悉心護理的小狗" />
+          <div className="border-t border-cyberBorder px-7 py-7 sm:px-12 lg:border-l lg:border-t-0 lg:px-16">
             <p className="text-sm font-bold tracking-widest text-cyberPurple">品牌承諾</p>
             <h2 className="mt-3 text-3xl font-extrabold text-cyberBlack">寵悅康 Petigrain<sup className="text-xs">TM</sup></h2>
             <p className="mt-5 max-w-lg text-base leading-8 text-cyberGray">寵悅康 <sup className="text-xs">TM</sup> 致力以天然科學護理，守護每一隻毛孩的健康生活，為毛孩與家庭帶來真實而持久的改變。</p>
