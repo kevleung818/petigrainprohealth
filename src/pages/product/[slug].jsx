@@ -380,7 +380,7 @@ export default function ProductDetailPage() {
             </div>
             <div className="grid gap-5 p-5 sm:grid-cols-3 sm:p-8">
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Hepa Dog before 1.png" alt="健肝素狗狗個案服用前，皮膚狀況參考一" className="h-72 w-full object-cover sm:h-80" />
+                <img src="/demo/Screenshot 2026-09-24 at 12.36.44.png" alt="健肝素狗狗個案服用前，皮膚狀況參考一" className="h-72 w-full object-cover sm:h-80" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">服用前參考一 · 皮膚狀況</figcaption>
               </figure>
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
