@@ -114,7 +114,7 @@ export default function Layout({ children }) {
           <div className="flex items-center gap-8">
             <div className="flex items-center gap-2">
               <Link href="/" className="text-lg font-extrabold tracking-wide text-cyberBlack">寵悅康<sup className="text-2xs">TM</sup></Link>
-              <span className="text-lg font-semibold tracking-wide text-cyberPurple">PETIGRAIN</span>
+              <span className="text-lg font-semibold tracking-wide text-cyberPurple">PETIGRAIN 香港科研 * 專利配方</span>
             </div>
             <nav aria-label="Primary site navigation" className="hidden items-center gap-5 text-3xs uppercase tracking-wider md:flex">
               {NAV.map((item) => item.key === 'products' ? (
