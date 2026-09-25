@@ -113,9 +113,10 @@ export default function Layout({ children }) {
         <div className="mx-auto flex items-center justify-between gap-2 sm:gap-4">
           <div className="flex min-w-0 items-center gap-2 sm:gap-8">
             <img className="h-7 w-12 shrink-0 object-contain sm:h-8 sm:w-14" src="/demo/one.png" alt="寵悅康標誌" />
-            <div className="flex min-w-0 items-center gap-1 sm:gap-2">
+            <div className="flex min-w-0 flex-wrap items-center gap-1 sm:flex-nowrap sm:gap-2">
               <Link href="/" className="shrink-0 text-sm font-extrabold tracking-wide text-cyberBlack sm:text-lg">寵悅康<sup className="text-2xs">TM</sup></Link>
-              <span className="min-w-0 truncate text-xs font-semibold tracking-wide text-cyberPurple sm:text-lg">PETIGRAIN 香港科研 * 專利配方</span>
+              <span className="shrink-0 text-xs font-semibold tracking-wide text-cyberPurple sm:text-lg">PETIGRAIN</span>
+              <span className="basis-full text-xs font-semibold tracking-wide text-cyberPurple sm:basis-auto sm:text-lg">香港科研 * 專利配方</span>
             </div>
             <nav aria-label="Primary site navigation" className="hidden items-center gap-5 text-3xs uppercase tracking-wider md:flex">
               {NAV.map((item) => item.key === 'products' ? (
