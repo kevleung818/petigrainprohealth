@@ -110,11 +110,12 @@ export default function Layout({ children }) {
   return (
     <div className="relative min-h-screen overflow-hidden bg-cyberSurface text-cyberBlack font-sans">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-cyberBorder bg-cyberSurface/95 px-4 py-4 backdrop-blur-sm sm:px-6 lg:px-8">
-        <div className="mx-auto flex flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-8">
-            <div className="flex items-center gap-2">
-              <Link href="/" className="text-lg font-extrabold tracking-wide text-cyberBlack">寵悅康<sup className="text-2xs">TM</sup></Link>
-              <span className="text-lg font-semibold tracking-wide text-cyberPurple">PETIGRAIN 香港科研 * 專利配方</span>
+        <div className="mx-auto flex items-center justify-between gap-2 sm:gap-4">
+          <div className="flex min-w-0 items-center gap-2 sm:gap-8">
+            <img className="h-7 w-12 shrink-0 object-contain sm:h-8 sm:w-14" src="/demo/one.png" alt="寵悅康標誌" />
+            <div className="flex min-w-0 items-center gap-1 sm:gap-2">
+              <Link href="/" className="shrink-0 text-sm font-extrabold tracking-wide text-cyberBlack sm:text-lg">寵悅康<sup className="text-2xs">TM</sup></Link>
+              <span className="min-w-0 truncate text-xs font-semibold tracking-wide text-cyberPurple sm:text-lg">PETIGRAIN 香港科研 * 專利配方</span>
             </div>
             <nav aria-label="Primary site navigation" className="hidden items-center gap-5 text-3xs uppercase tracking-wider md:flex">
               {NAV.map((item) => item.key === 'products' ? (
@@ -141,7 +142,7 @@ export default function Layout({ children }) {
               aria-controls="mobile-menu"
                 className="border border-cyberBorder bg-white px-4 py-2 text-sm font-bold text-cyberBlack transition hover:border-cyberPurple focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyberPurple md:hidden"
             >
-              {mobileMenuOpen ? 'Close' : '產品資料'}
+              {mobileMenuOpen ? '關閉' : '網站選單'}
             </button>
             {isMember ? (
               <div className="hidden items-center gap-3 sm:flex">
