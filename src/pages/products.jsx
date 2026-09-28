@@ -5,13 +5,13 @@ import PrimaryButton from '../components/PrimaryButton';
 export const PRODUCTS = [
   {
     slug: 'bri-sol',
-    name: '添麗輝',
-    english: 'Bri-Sol',
+    name: '添麗輝™',
+    english: 'Bri-Sol™',
     strapline: '抗衰老護眼液',
     colour: 'border-sky-400',
     badge: '護理眼睛健康',
     capacity: '10 ml',
-    description: '「添麗輝TM」抗衰老護眼液，採用澳洲草本製成，專為眼睛日常保養及護理眼睛研發，以應付隨年齡增長或體康下降以及環境因素影響眼睛健康問題。',
+    description: '「添麗輝™」抗衰老護眼液，採用澳洲草本製成，專為眼睛日常保養及護理眼睛研發，以應付隨年齡增長或體康下降以及環境因素影響眼睛健康問題。',
     benefits: ['舒緩眼部乾澀及疲勞', '促進眼周微循環', '維持雙眼清透晶亮'],
     suitable: '結膜炎、眼分泌物、眼乾、紅筋、飛蚊',
     ingredients: '鹽水、甘菊花露、植物甘油、蘆薈、花梨木、甘菊、紅桃金孃、薰衣草、絲柏及迷迭香抗氧化劑',
@@ -20,13 +20,13 @@ export const PRODUCTS = [
   },
   {
     slug: 'oti-dor',
-    name: '朵清新',
-    english: 'Oti-Dor',
-    strapline: '耳朵清爽，頭仔不耳搖',
+    name: '朵清新™',
+    english: 'Oti-Dor™',
+    strapline: '耳朵清爽',
     colour: 'border-amber-300',
     badge: '耳道日常護理',
     capacity: '15ml',
-    description: '朵清新專為寵物耳道護理研發，採用天然植物萃取，有效溶解耳道內積聚的耳垢與分泌物，並消除耳部異味。溫和清潔的同時舒緩肌膚不適，適合敏弱耳道使用。',
+    description: '朵清新™ 專為寵物耳道護理研發，採用天然植物萃取，有效溶解耳道內積聚的耳垢與分泌物，並消除耳部異味。溫和清潔的同時舒緩肌膚不適，適合敏弱耳道使用。',
     benefits: ['耳道深層清潔，溶解耳垢與分泌物', '天然抗菌成分，舒緩耳部炎症及痕癢', '平衡耳道菌叢，減少異常分泌物積聚', '定期護理，預防耳道炎症反覆發作'],
     suitable: '耳道、外耳周圍及肌膚局部保養',
     ingredients: '甜杏油、維他命 E、佛手柑、絲柏、尤加利、茶樹、丁香',
@@ -86,8 +86,8 @@ function ProductCard({ product }) {
       <div className="flex flex-wrap items-start justify-between gap-4 border-b border-cyberBorder px-6 pb-5 pt-6 sm:px-7">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyberGray">{product.english}</p>
-          <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-cyberBlack">{product.name}{product.slug === 'bri-sol' || product.slug === 'oti-dor' ? '™' : ''}</h2>
-          {product.note ? <p className="mt-3 text-base font-black text-cyberGray">發明專利 {product.note.replace(/^.*?發明專利\s*/, '').trim()}</p> : null}
+          <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-cyberBlack">{product.name}</h2>
+          {product.note ? <p className="mt-3 text-base font-black text-cyberGray">{product.note}</p> : null}
           <p className="mt-2 inline-block bg-cyberBlack px-3 py-1 text-base font-bold text-white">{product.strapline}</p>
         </div>
         <div className="text-right text-xs font-bold text-cyberGray">
@@ -135,7 +135,7 @@ export default function ProductsPage() {
         <section className="border-b border-cyberBorder py-12 sm:py-16">
           <p className="text-sm font-bold tracking-widest text-cyberPurple">全天然科學寵物護理</p>
           <h1 className="mt-3 max-w-4xl text-4xl font-extrabold leading-tight text-cyberBlack sm:text-5xl">全方位天然健康產品</h1>
-          <p className="mt-5 max-w-3xl text-base leading-8 text-cyberGray">以天然植物萃取、科研實證及清晰成分為基礎，為毛孩提供眼睛、耳道、免疫、肝臟及腎臟的精準日常護理。</p>
+          <p className="mt-5 max-w-3xl text-base leading-8 text-cyberGray">以天然植物萃取及科研實證，為毛孩提供眼睛、耳道、免疫、肝臟及腎臟的精準日常護理。</p>
           <div className="mt-8 flex flex-wrap gap-3 text-sm font-bold text-cyberGray">
             <span className="border border-cyberBorder bg-white px-5 py-2.5">澳洲進口</span>
             <span className="border border-cyberBorder bg-white px-5 py-2.5">天然植物配方</span>

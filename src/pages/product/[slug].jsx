@@ -24,8 +24,8 @@ export default function ProductDetailPage() {
           <div className="grid lg:grid-cols-[0.8fr_1.2fr]">
             <div className="flex min-h-[320px] flex-col justify-center bg-cyberPanelSoft px-7 py-12 sm:px-12">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyberGray">{product.english}</p>
-              <h1 className="mt-3 text-5xl font-extrabold tracking-tight text-cyberBlack">{product.name}{product.slug === 'bri-sol' || product.slug === 'oti-dor' ? '™' : ''}</h1>
-              {product.note ? <p className="mt-3 text-lg font-black text-cyberGray">發明專利 {product.note.replace(/^.*?發明專利\s*/, '').trim()}</p> : null}
+              <h1 className="mt-3 text-5xl font-extrabold tracking-tight text-cyberBlack">{product.name}</h1>
+              {product.note ? <p className="mt-3 text-lg font-black text-cyberGray">{product.note}</p> : null}
               <p className="mt-5 inline-flex self-start bg-cyberBlack px-4 py-2 text-lg font-bold text-white">{product.strapline}</p>
               <p className="mt-8 text-base font-bold text-cyberGray">容量 {product.capacity}</p>
             </div>
@@ -49,14 +49,14 @@ export default function ProductDetailPage() {
         {product.slug === 'bri-sol' ? (
           <div>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
-            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
-              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL · DOG SUCCESS STORY</p>
-              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+            <div className="relative border-b border-cyberBorder px-7 py-7 sm:px-10">
+              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL™ · DOG SUCCESS STORY</p>
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4 pr-28 sm:pr-36">
                 <div>
                   <h2 className="text-3xl font-extrabold text-cyberBlack">30天改善個案</h2>
-                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">這個案例記錄狗狗在持續使用添麗輝30天後</p>
+                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">這個案例記錄狗狗在持續使用添麗輝™30天後</p>
                 </div>
-                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
+                <div className="absolute right-4 top-4 min-w-[6.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-3 py-3 text-center">
                   <p className="text-xs font-bold text-cyberGray">滴用時間</p>
                   <p className="mt-1 text-2xl font-black text-cyberPurple">30 天</p>
                 </div>
@@ -64,25 +64,25 @@ export default function ProductDetailPage() {
             </div>
             <div className="grid gap-5 p-5 sm:grid-cols-2 sm:p-8">
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Brisol dog before.png" alt="狗狗滴用添麗輝前" className="h-72 w-full object-cover sm:h-80" />
+                <img src="/demo/Brisol dog before.png" alt="狗狗滴用添麗輝™前" className="h-72 w-full object-cover sm:h-80" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第1天 - 當時狀况</figcaption>
               </figure>
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Brisol dog 30 days.png" alt="狗狗滴用添麗輝 30 天後" className="h-72 w-full object-cover sm:h-80" />
+                <img src="/demo/Brisol dog 30 days.png" alt="狗狗滴用添麗輝™ 30 天後" className="h-72 w-full object-cover sm:h-80" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第30天 - 護理後狀況</figcaption>
               </figure>
             </div>
             <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
           </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
-            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
-              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL · SUCCESS CASE 04</p>
-              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+            <div className="relative border-b border-cyberBorder px-7 py-7 sm:px-10">
+              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL™ · SUCCESS CASE 04</p>
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4 pr-28 sm:pr-36">
                 <div>
                   <h2 className="text-3xl font-extrabold text-cyberBlack">7天改善個案</h2>
-                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">這個案例記錄狗狗在持續使用添麗輝 7天後</p>
+                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">這個案例記錄狗狗在持續使用添麗輝™ 7天後</p>
                 </div>
-                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
+                <div className="absolute right-4 top-4 min-w-[6.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-3 py-3 text-center">
                   <p className="text-xs font-bold text-cyberGray">護理時間</p>
                   <p className="mt-1 text-2xl font-black text-cyberPurple">7 天</p>
                 </div>
@@ -90,25 +90,25 @@ export default function ProductDetailPage() {
             </div>
             <div className="grid gap-5 p-5 sm:grid-cols-2 sm:p-8">
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/bri-sol-dog-eye-case-day-1-seven-days.png" alt="添麗輝狗狗眼部個案滴用前" className="h-72 w-full object-cover sm:h-80" />
+                <img src="/demo/bri-sol-dog-eye-case-day-1-seven-days.png" alt="添麗輝™狗狗眼部個案滴用前" className="h-72 w-full object-cover sm:h-80" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第1天 - 當時狀况</figcaption>
               </figure>
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/bri-sol-dog-eye-case-day-7.png" alt="添麗輝狗狗眼部個案 7 days treatment" className="h-72 w-full object-cover sm:h-80" />
+                <img src="/demo/bri-sol-dog-eye-case-day-7.png" alt="添麗輝™狗狗眼部個案 7 days treatment" className="h-72 w-full object-cover sm:h-80" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第7天 - 護理後狀況</figcaption>
               </figure>
             </div>
             <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
           </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
-            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
-              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL · SUCCESS CASE 05</p>
-              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+            <div className="relative border-b border-cyberBorder px-7 py-7 sm:px-10">
+              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL™ · SUCCESS CASE 05</p>
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4 pr-28 sm:pr-36">
                 <div>
                   <h2 className="text-3xl font-extrabold text-cyberBlack">21 天改善個案</h2>
-                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">這個案例記錄狗狗在持續使用添麗輝 21天後</p>
+                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">這個案例記錄狗狗在持續使用添麗輝™ 21天後</p>
                 </div>
-                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
+                <div className="absolute right-4 top-4 min-w-[6.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-3 py-3 text-center">
                   <p className="text-xs font-bold text-cyberGray">滴用時間</p>
                   <p className="mt-1 text-2xl font-black text-cyberPurple">21 天</p>
                 </div>
@@ -116,25 +116,25 @@ export default function ProductDetailPage() {
             </div>
             <div className="grid gap-5 p-5 sm:grid-cols-2 sm:p-8">
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Brisol case before -2.png" alt="添麗輝貓咪個案滴用前" className="h-72 w-full object-cover sm:h-80" />
+                <img src="/demo/Brisol case before -2.png" alt="添麗輝™貓咪個案滴用前" className="h-72 w-full object-cover sm:h-80" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第1天 - 當時狀况</figcaption>
               </figure>
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Brisol case 21.png" alt="添麗輝貓咪個案滴用 21 天後" className="h-72 w-full object-cover sm:h-80" />
+                <img src="/demo/Brisol case 21.png" alt="添麗輝™貓咪個案滴用 21 天後" className="h-72 w-full object-cover sm:h-80" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第21天 - 護理後狀況</figcaption>
               </figure>
             </div>
             <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作食用前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
           </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
-            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
-              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL · SUCCESS CASE 06</p>
-              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+            <div className="relative border-b border-cyberBorder px-7 py-7 sm:px-10">
+              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL™ · SUCCESS CASE 06</p>
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4 pr-28 sm:pr-36">
                 <div>
                   <h2 className="text-3xl font-extrabold text-cyberBlack">70天改善個案</h2>
-                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">持續使用添麗輝70天，記錄眼睛由結膜白化至清晰明亮的改善過程。</p>
+                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">持續使用添麗輝™70天，記錄眼睛由結膜白化至清晰明亮的改善過程。</p>
                 </div>
-                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
+                <div className="absolute right-4 top-4 min-w-[6.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-3 py-3 text-center">
                   <p className="text-xs font-bold text-cyberGray">使用時間</p>
                   <p className="mt-1 text-2xl font-black text-cyberPurple">70 天</p>
                 </div>
@@ -165,14 +165,14 @@ export default function ProductDetailPage() {
             <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
           </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
-            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
-              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL · SUCCESS CASE 07</p>
-              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+            <div className="relative border-b border-cyberBorder px-7 py-7 sm:px-10">
+              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL™ · SUCCESS CASE 07</p>
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4 pr-28 sm:pr-36">
                 <div>
                   <h2 className="text-3xl font-extrabold text-cyberBlack">4天改善個案</h2>
-                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">持續使用添麗輝4天，記錄眼部狀況的改善過程。</p>
+                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">持續使用添麗輝™4天，記錄眼部狀況的改善過程。</p>
                 </div>
-                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
+                <div className="absolute right-4 top-4 min-w-[6.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-3 py-3 text-center">
                   <p className="text-xs font-bold text-cyberGray">使用時間</p>
                   <p className="mt-1 text-2xl font-black text-cyberPurple">4 天</p>
                 </div>
@@ -180,21 +180,21 @@ export default function ProductDetailPage() {
             </div>
             <div className="p-5 sm:p-8">
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/WhatsApp Image 2026-09-17 at 18.03.14.jpeg" alt="添麗輝4天改善個案第1天及第4天" className="mx-auto h-auto max-h-[32rem] w-full object-contain" />
+                <img src="/demo/WhatsApp Image 2026-09-17 at 18.03.14.jpeg" alt="添麗輝™4天改善個案第1天及第4天" className="mx-auto h-auto max-h-[32rem] w-full object-contain" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第1天至第4天 - 改善記錄</figcaption>
               </figure>
             </div>
             <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
           </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
-            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
-              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL · SUCCESS CASE 08</p>
-              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+            <div className="relative border-b border-cyberBorder px-7 py-7 sm:px-10">
+              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL™ · SUCCESS CASE 08</p>
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4 pr-28 sm:pr-36">
                 <div>
                   <h2 className="text-3xl font-extrabold text-cyberBlack">30天改善個案</h2>
-                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">持續使用添麗輝30天，記錄眼部狀況的改善過程。</p>
+                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">持續使用添麗輝™30天，記錄眼部狀況的改善過程。</p>
                 </div>
-                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
+                <div className="absolute right-4 top-4 min-w-[6.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-3 py-3 text-center">
                   <p className="text-xs font-bold text-cyberGray">使用時間</p>
                   <p className="mt-1 text-2xl font-black text-cyberPurple">30 天</p>
                 </div>
@@ -202,7 +202,7 @@ export default function ProductDetailPage() {
             </div>
             <div className="p-5 sm:p-8">
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/bristol-30-day.jpeg" alt="添麗輝30天改善個案第1天及第30天" className="mx-auto h-auto max-h-[32rem] w-full object-contain" />
+                <img src="/demo/bristol-30-day.jpeg" alt="添麗輝™30天改善個案第1天及第30天" className="mx-auto h-auto max-h-[32rem] w-full object-contain" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第1天至第30天 - 改善記錄</figcaption>
               </figure>
             </div>
@@ -212,30 +212,28 @@ export default function ProductDetailPage() {
         ) : null}
         {product.slug === 'oti-dor' ? (
           <section className="mt-10 overflow-hidden border border-cyberBorder bg-white">
-            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
-              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">OTI-DOR · SUCCESS CASE</p>
-              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
-                <div>
-                  <h2 className="text-3xl font-extrabold text-cyberBlack">耳部護理十九天成功個案</h2>
-                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">個案記錄毛孩使用朵清新前後的耳部狀況，展示連續塗用 19 天期間由 4 May 至 23 May 的改善進程。</p>
-                </div>
-                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
-                  <p className="text-xs font-bold text-cyberGray">塗用時間</p>
-                  <p className="mt-1 text-2xl font-black text-cyberPurple">19 天</p>
-                </div>
+            <div className="relative border-b border-cyberBorder px-7 py-7 pr-36 sm:px-10 sm:pr-40">
+              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">OTI-DOR™ · SUCCESS CASE</p>
+              <div className="mt-3">
+                <h2 className="text-3xl font-extrabold text-cyberBlack">耳部護理十九天成功個案</h2>
+                <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">個案記錄毛孩使用朵清新™前後的耳部狀況，展示連續塗用 19 天期間由 4 May 至 23 May 的改善進程。</p>
+              </div>
+              <div className="absolute right-4 top-4 min-w-[7.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-4 py-3 text-center sm:right-6 sm:top-6 sm:px-5">
+                <p className="whitespace-nowrap text-xs font-bold text-cyberGray">塗用時間</p>
+                <p className="mt-1 whitespace-nowrap text-2xl font-black text-cyberPurple">19 天</p>
               </div>
             </div>
             <div className="grid gap-5 p-5 sm:grid-cols-3 sm:p-8">
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Oti 1.png" alt="朵清新個案 4 May 塗用前" className="h-72 w-full object-cover sm:h-80" />
+                <img src="/demo/Oti 1.png" alt="朵清新™個案 4 May 塗用前" className="h-72 w-full object-cover sm:h-80" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">4 May · 塗用前</figcaption>
               </figure>
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Oti 2.png" alt="朵清新個案 12 May 塗用第 8 天" className="h-72 w-full object-cover sm:h-80" />
+                <img src="/demo/Oti 2.png" alt="朵清新™個案 12 May 塗用第 8 天" className="h-72 w-full object-cover sm:h-80" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">12 May · 塗用第 8 天</figcaption>
               </figure>
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Oti 3.png" alt="朵清新個案 23 May 塗用第 19 天" className="h-72 w-full object-cover sm:h-80" />
+                <img src="/demo/Oti 3.png" alt="朵清新™個案 23 May 塗用第 19 天" className="h-72 w-full object-cover sm:h-80" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">23 May · 塗用第 19 天</figcaption>
               </figure>
             </div>
@@ -244,14 +242,14 @@ export default function ProductDetailPage() {
         ) : null}
         {product.slug === 'immu-guard' ? (
           <section className="mt-10 overflow-hidden border border-cyberBorder bg-white">
-            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
+            <div className="relative border-b border-cyberBorder px-7 py-7 sm:px-10">
               <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">{product.english} · SUCCESS CASE</p>
-              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4 pr-28 sm:pr-36">
                 <div>
                   <h2 className="text-3xl font-extrabold text-cyberBlack">二十天皮膚護理改善個案</h2>
                   <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">個案記錄使用 {product.name} 前後的皮膚狀況，展示開始護理、5 天後及 20 天後的恢復進程。</p>
                 </div>
-                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
+                <div className="absolute right-4 top-4 min-w-[6.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-3 py-3 text-center">
                   <p className="text-xs font-bold text-cyberGray">護理時間</p>
                   <p className="mt-1 text-2xl font-black text-cyberPurple">20 天</p>
                 </div>
@@ -276,14 +274,14 @@ export default function ProductDetailPage() {
         ) : null}
         {product.slug === 'immu-guard' ? (
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
-            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
+            <div className="relative border-b border-cyberBorder px-7 py-7 sm:px-10">
               <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">IMMU GUARD · SUCCESS CASE 02</p>
-              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4 pr-28 sm:pr-36">
                 <div>
                   <h2 className="text-3xl font-extrabold text-cyberBlack">狗仔腳趾感染發炎改善個案</h2>
                   <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">狗仔腳趾受感染發炎，服用健體素 11 天後，可見腳趾表皮結痂修復中；到 34 天，腳趾清晰長回。</p>
                 </div>
-                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
+                <div className="absolute right-4 top-4 min-w-[6.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-3 py-3 text-center">
                   <p className="text-xs font-bold text-cyberGray">觀察時間</p>
                   <p className="mt-1 text-2xl font-black text-cyberPurple">34 天</p>
                 </div>
@@ -309,14 +307,14 @@ export default function ProductDetailPage() {
         {product.slug === 'hepa-guard' ? (
           <div>
           <section className="mt-10 overflow-hidden border border-cyberBorder bg-white">
-            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
+            <div className="relative border-b border-cyberBorder px-7 py-7 sm:px-10">
               <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">HEPA GUARD · SUCCESS CASE</p>
-              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4 pr-28 sm:pr-36">
                 <div>
                   <h2 className="text-3xl font-extrabold text-cyberBlack">嚴重皮膚問題六十天改善個案</h2>
                   <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">個案初期出現嚴重皮炎、脫毛及皮膚粗糙和乾硬；服用「健肝素」60 天後，毛毛重新長毛。</p>
                 </div>
-                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
+                <div className="absolute right-4 top-4 min-w-[6.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-3 py-3 text-center">
                   <p className="text-xs font-bold text-cyberGray">服用時間</p>
                   <p className="mt-1 text-2xl font-black text-cyberPurple">60 天</p>
                 </div>
@@ -339,14 +337,14 @@ export default function ProductDetailPage() {
             <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有嚴重皮炎、脫毛或皮膚異常，請先諮詢獸醫。</p>
           </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
-            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
+            <div className="relative border-b border-cyberBorder px-7 py-7 sm:px-10">
               <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">HEPA GUARD · SUCCESS CASE 02</p>
-              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4 pr-28 sm:pr-36">
                 <div>
                   <h2 className="text-3xl font-extrabold text-cyberBlack">皮膚護理三十天改善個案</h2>
                   <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">個案記錄狗狗服用「健肝素」前後的皮膚狀況，展示開始使用與服用 30 天後的外觀變化。</p>
                 </div>
-                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
+                <div className="absolute right-4 top-4 min-w-[6.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-3 py-3 text-center">
                   <p className="text-xs font-bold text-cyberGray">服用時間</p>
                   <p className="mt-1 text-2xl font-black text-cyberPurple">30 天</p>
                 </div>
@@ -365,14 +363,14 @@ export default function ProductDetailPage() {
             <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續皮膚問題，請先諮詢獸醫。</p>
           </section>
           <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
-            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
+            <div className="relative border-b border-cyberBorder px-7 py-7 sm:px-10">
               <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">HEPA GUARD · SUCCESS CASE 03</p>
-              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4 pr-28 sm:pr-36">
                 <div>
                   <h2 className="text-3xl font-extrabold text-cyberBlack">皮膚狀況四十五天護理個案</h2>
                   <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">這個個案記錄狗狗服用「健肝素」前後的皮膚狀況，展示服用 45 天後的改善記錄。</p>
                 </div>
-                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
+                <div className="absolute right-4 top-4 min-w-[6.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-3 py-3 text-center">
                   <p className="text-xs font-bold text-cyberGray">服用時間</p>
                   <p className="mt-1 text-2xl font-black text-cyberPurple">45 天</p>
                 </div>
@@ -398,14 +396,14 @@ export default function ProductDetailPage() {
         ) : null}
         {product.slug === 'urol-guard' ? (
           <section className="mt-10 overflow-hidden border border-cyberBorder bg-white">
-            <div className="border-b border-cyberBorder px-7 py-7 sm:px-10">
+            <div className="relative border-b border-cyberBorder px-7 py-7 sm:px-10">
               <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">UROL GUARD · SUCCESS CASE</p>
-              <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4 pr-28 sm:pr-36">
                 <div>
                   <h2 className="text-3xl font-extrabold text-cyberBlack">中風後狗狗 11 天改善個案</h2>
                   <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">狗狗因中風導致活動不便，持續食用健腎素 11 天後，主人觀察到活動能力及精神狀況有所改善。</p>
                 </div>
-                <div className="border border-cyberPurple/30 bg-cyberPurple/10 px-5 py-3 text-center">
+                <div className="absolute right-4 top-4 min-w-[6.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-3 py-3 text-center">
                   <p className="text-xs font-bold text-cyberGray">食用時間</p>
                   <p className="mt-1 text-2xl font-black text-cyberPurple">11 天</p>
                 </div>

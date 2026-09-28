@@ -8,8 +8,8 @@ const NAV = [
   { key: 'products', label: '產品資料', href: '/products' }
 ];
 const PRODUCT_LINKS = [
-  { label: '添麗輝 Bri-Sol', href: '/product/bri-sol' },
-  { label: '朵清新 Oti-Dor', href: '/product/oti-dor' },
+  { label: '添麗輝™ Bri-Sol™', href: '/product/bri-sol' },
+  { label: '朵清新™ Oti-Dor™', href: '/product/oti-dor' },
   { label: '健體素 Immu Guard', href: '/product/immu-guard' },
   { label: '健肝素 Hepa Guard', href: '/product/hepa-guard' },
   { label: '健腎素 Urol Guard', href: '/product/urol-guard' }
@@ -112,10 +112,10 @@ export default function Layout({ children }) {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-cyberBorder bg-cyberSurface/95 px-4 py-4 backdrop-blur-sm sm:px-6 lg:px-8">
         <div className="mx-auto flex items-center justify-between gap-2 sm:gap-4">
           <div className="flex min-w-0 items-center gap-2 sm:gap-8">
-            <img className="h-7 w-12 shrink-0 object-contain sm:h-8 sm:w-14" src="/demo/one.png" alt="寵悅康標誌" />
+            <img className="h-7 w-12 shrink-0 object-contain sm:h-8 sm:w-14" src="/demo/one.png" alt="寵悅康™標誌" />
             <div className="flex min-w-0 flex-wrap items-center gap-1 sm:flex-nowrap sm:gap-2">
-              <Link href="/" className="shrink-0 text-sm font-extrabold tracking-wide text-cyberBlack sm:text-lg">寵悅康<sup className="text-2xs">TM</sup></Link>
-              <span className="shrink-0 text-xs font-semibold tracking-wide text-cyberPurple sm:text-lg">PETIGRAIN</span>
+              <Link href="/" className="shrink-0 text-sm font-extrabold tracking-wide text-cyberBlack sm:text-lg">寵悅康™</Link>
+              <span className="shrink-0 text-xs font-semibold tracking-wide text-cyberBlack sm:text-lg">PETIGRAIN</span>
               <span className="basis-full text-xs font-semibold tracking-wide text-cyberPurple sm:basis-auto sm:text-lg">香港科研 * 專利配方</span>
             </div>
             <nav aria-label="Primary site navigation" className="hidden items-center gap-5 text-3xs uppercase tracking-wider md:flex">
