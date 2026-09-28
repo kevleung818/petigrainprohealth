@@ -37,7 +37,7 @@ export const PRODUCTS = [
     slug: 'immu-guard',
     name: '健體素',
     english: 'IMMU GUARD',
-    strapline: '維持免疫力穩態 + 抗氧化防護',
+    strapline: '維持免疫力穩態\n守護細胞防護',
     colour: 'border-emerald-600',
     badge: '全方位守護寵物',
     capacity: '30ml',

@@ -216,7 +216,7 @@ export default function ProductDetailPage() {
               <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">OTI-DOR™ · SUCCESS CASE</p>
               <div className="mt-3">
                 <h2 className="text-3xl font-extrabold text-cyberBlack">耳部護理十九天成功個案</h2>
-                <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">個案記錄毛孩使用朵清新™前後的耳部狀況，展示連續塗用 19 天期間由 4 May 至 23 May 的改善進程。</p>
+                <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">個案記錄毛孩使用朵清新™前後的耳部狀況，展示連續塗用 19 天期間由 5月4日 至 5月23日 的改善進程。</p>
               </div>
               <div className="absolute right-4 top-4 min-w-[7.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-4 py-3 text-center sm:right-6 sm:top-6 sm:px-5">
                 <p className="whitespace-nowrap text-xs font-bold text-cyberGray">塗用時間</p>
@@ -225,16 +225,16 @@ export default function ProductDetailPage() {
             </div>
             <div className="grid gap-5 p-5 sm:grid-cols-3 sm:p-8">
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Oti 1.png" alt="朵清新™個案 4 May 塗用前" className="h-72 w-full object-cover sm:h-80" />
-                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">4 May · 塗用前</figcaption>
+                <img src="/demo/Oti 1.png" alt="朵清新™個案 5月4日 塗用前" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">5月4日 · 塗用前</figcaption>
               </figure>
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Oti 2.png" alt="朵清新™個案 12 May 塗用第 8 天" className="h-72 w-full object-cover sm:h-80" />
-                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">12 May · 塗用第 8 天</figcaption>
+                <img src="/demo/Oti 2.png" alt="朵清新™個案 5月12日 塗用第 8 天" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">5月12日 · 塗用第 8 天</figcaption>
               </figure>
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Oti 3.png" alt="朵清新™個案 23 May 塗用第 19 天" className="h-72 w-full object-cover sm:h-80" />
-                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">23 May · 塗用第 19 天</figcaption>
+                <img src="/demo/Oti 3.png" alt="朵清新™個案 5月23日 塗用第 19 天" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">5月23日 · 塗用第 19 天</figcaption>
               </figure>
             </div>
             <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作耳部護理進程記錄參考，不能代替獸醫診斷或治療；如有耳部紅腫、異味、分泌物或持續搔癢，請先諮詢獸醫。</p>
