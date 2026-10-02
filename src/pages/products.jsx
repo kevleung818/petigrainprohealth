@@ -149,7 +149,7 @@ export default function ProductsPage() {
 
         <section className="border-t border-cyberBorder py-10 text-sm leading-7 text-cyberGray">
           <p className="font-bold text-cyberBlack">使用提示</p>
-          <p className="mt-2 max-w-3xl">以上產品資料整理自 Petigrain 官方產品單張。產品屬健康輔助範疇；如毛孩有持續或嚴重症狀，請先諮詢獸醫或合資格專業人士。</p>
+          <p className="mt-2 max-w-3xl">以上產品資料整理自官方產品單張。產品屬健康輔助範疇；如毛孩有持續或嚴重症狀，請先諮詢獸醫或合資格專業人士。</p>
         </section>
       </div>
     </Layout>

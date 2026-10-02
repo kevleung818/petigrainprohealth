@@ -51,7 +51,7 @@ export default function HomePage() {
           <img className="block h-full min-h-[18rem] w-full object-cover bg-cyberPanelSoft" src="/demo/IMG_2003 (1).jpeg" alt="接受悉心護理的小狗" />
           <div className="border-t border-cyberBorder px-7 py-7 sm:px-12 lg:border-l lg:border-t-0 lg:px-16">
             <p className="text-sm font-bold tracking-widest text-cyberPurple">品牌承諾</p>
-            <h2 className="mt-3 text-3xl font-extrabold text-cyberBlack">寵悅康™ Petigrain</h2>
+            <h2 className="mt-3 text-3xl font-extrabold text-cyberBlack">寵悅康™</h2>
             <p className="mt-5 max-w-lg text-base leading-8 text-cyberGray">寵悅康™ 致力以天然科學護理，守護每一隻毛孩的健康生活，為毛孩與家庭帶來真實而持久的改變。</p>
           </div>
         </section>
@@ -67,7 +67,7 @@ export default function HomePage() {
               </ol>
             </div>
             <div>
-              <p className="text-lg font-bold">寵悅康™ Petigrain</p>
+              <p className="text-lg font-bold">寵悅康™</p>
               <p className="mt-4 text-sm leading-7 text-white/75">健維康科技有限公司<br />Healthy-Bird Technology Co., Ltd.<br />Room 408, 4/F, No. 61 Mody Road, TST East, Kowloon, HK<br />香港九龍尖東麼地道 61 號冠華中心 4 樓 408B 室<br />+852 2868 0085</p>
             </div>
           </div>

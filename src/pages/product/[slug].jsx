@@ -120,11 +120,11 @@ export default function ProductDetailPage() {
             </div>
             <div className="grid gap-5 p-5 sm:grid-cols-2 sm:p-8">
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Brisol case before -2.png" alt="添麗輝™貓咪個案滴用前" className="h-72 w-full object-cover sm:h-80" />
+                <img src="/demo/Brisol 1cat.jpeg" alt="添麗輝™貓咪個案滴用前" className="h-72 w-full object-cover sm:h-80" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第1天 - 當時狀况</figcaption>
               </figure>
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Brisol case 21.png" alt="添麗輝™貓咪個案滴用 21 天後" className="h-72 w-full object-cover sm:h-80" />
+                <img src="/demo/Brisol 2cat 15days.jpeg" alt="添麗輝™貓咪個案滴用 21 天後" className="h-72 w-full object-cover sm:h-80" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第21天 - 護理後狀況</figcaption>
               </figure>
             </div>
@@ -228,15 +228,41 @@ export default function ProductDetailPage() {
             </div>
             <div className="grid gap-5 p-5 sm:grid-cols-2 sm:p-8">
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Screenshot 2026-10-02 at 17.11.28.png" alt="黑唐狗患白內障，使用添麗輝護眼液前的眼部記錄" className="h-72 w-full object-cover sm:h-80" />
+                <img src="/demo/Screenshot 2026-10-02 at 17.11.22.png" alt="黑唐狗使用添麗輝護眼液一年後的眼部記錄" className="h-72 w-full object-cover sm:h-80" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">黑唐狗患白內障 · 使用前記錄</figcaption>
               </figure>
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Screenshot 2026-10-02 at 17.11.22.png" alt="黑唐狗使用添麗輝護眼液一年後的眼部記錄" className="h-72 w-full object-cover sm:h-80" />
+                <img src="/demo/Screenshot 2026-10-02 at 17.11.28.png" alt="黑唐狗患白內障，使用添麗輝護眼液前的眼部記錄" className="h-72 w-full object-cover sm:h-80" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">使用添麗輝護眼液一年後 · 改善記錄</figcaption>
               </figure>
             </div>
             <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作眼部狀況記錄參考，不能代替獸醫診斷或治療；白內障及其他眼部問題請先諮詢獸醫。</p>
+          </section>
+          <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
+            <div className="relative border-b border-cyberBorder px-7 py-7 sm:px-10">
+              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL™ · SUCCESS CASE 10</p>
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4 pr-28 sm:pr-36">
+                <div>
+                  <h2 className="text-3xl font-extrabold text-cyberBlack">15天眼部護理記錄</h2>
+                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">添麗輝護眼個案使用前及持續使用 15 天的照片記錄。</p>
+                </div>
+                <div className="absolute right-4 top-4 min-w-[6.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-3 py-3 text-center">
+                  <p className="text-xs font-bold text-cyberGray">記錄時間</p>
+                  <p className="mt-1 text-2xl font-black text-cyberPurple">15 天</p>
+                </div>
+              </div>
+            </div>
+            <div className="grid gap-5 p-5 sm:grid-cols-2 sm:p-8">
+              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
+                <img src="/demo/Brisol 1.png" alt="添麗輝護眼個案使用前" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">使用前</figcaption>
+              </figure>
+              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
+                <img src="/demo/Brisol 2.png" alt="添麗輝護眼個案使用 15 天後" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">使用 15 天後</figcaption>
+              </figure>
+            </div>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作眼部狀況記錄參考，不能代替獸醫診斷或治療；如有眼部不適或異常，請先諮詢獸醫。</p>
           </section>
           </div>
         ) : null}
@@ -351,11 +377,11 @@ export default function ProductDetailPage() {
             </div>
             <div className="grid gap-5 p-5 sm:grid-cols-2 sm:p-8">
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Screenshot 2026-10-02 at 17.14.24.png" alt="健體素案例 7 月牙肉紅腫記錄" className="h-72 w-full object-cover sm:h-80" />
+                <img src="/demo/Screenshot 2026-10-02 at 17.14.17.png" alt="服用健體素一個月後的牙肉狀況" className="h-72 w-full object-cover sm:h-80" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">7 月 · 牙肉紅腫</figcaption>
               </figure>
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Screenshot 2026-10-02 at 17.14.17.png" alt="服用健體素一個月後的牙肉狀況" className="h-72 w-full object-cover sm:h-80" />
+                <img src="/demo/Screenshot 2026-10-02 at 17.14.24.png" alt="健體素案例 7 月牙肉紅腫記錄" className="h-72 w-full object-cover sm:h-80" />
                 <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">8 月 · 服用健體素一個月，牙肉改善</figcaption>
               </figure>
             </div>

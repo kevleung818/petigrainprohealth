@@ -115,7 +115,6 @@ export default function Layout({ children }) {
             <img className="h-7 w-12 shrink-0 object-contain sm:h-8 sm:w-14" src="/demo/one.png" alt="寵悅康™標誌" />
             <div className="flex min-w-0 flex-wrap items-center gap-1 sm:flex-nowrap sm:gap-2">
               <Link href="/" className="shrink-0 text-sm font-extrabold tracking-wide text-cyberBlack sm:text-lg">寵悅康™</Link>
-              <span className="shrink-0 text-xs font-semibold tracking-wide text-cyberBlack sm:text-lg">PETIGRAIN</span>
               <span className="basis-full text-xs font-semibold tracking-wide text-cyberPurple sm:basis-auto sm:text-lg">香港科研 * 專利配方</span>
             </div>
             <nav aria-label="Primary site navigation" className="hidden items-center gap-5 text-3xs uppercase tracking-wider md:flex">
@@ -143,7 +142,7 @@ export default function Layout({ children }) {
               aria-controls="mobile-menu"
                 className="border border-cyberBorder bg-white px-4 py-2 text-sm font-bold text-cyberBlack transition hover:border-cyberPurple focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyberPurple md:hidden"
             >
-              {mobileMenuOpen ? '關閉' : '網站選單'}
+              {mobileMenuOpen ? '關閉' : '產品介紹'}
             </button>
             {isMember ? (
               <div className="hidden items-center gap-3 sm:flex">
