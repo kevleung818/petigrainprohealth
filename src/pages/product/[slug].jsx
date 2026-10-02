@@ -62,14 +62,18 @@ export default function ProductDetailPage() {
                 </div>
               </div>
             </div>
-            <div className="grid gap-5 p-5 sm:grid-cols-2 sm:p-8">
+            <div className="grid gap-5 p-5 sm:grid-cols-3 sm:p-8">
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Brisol dog before.png" alt="狗狗滴用添麗輝™前" className="h-72 w-full object-cover sm:h-80" />
-                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第1天 - 當時狀况</figcaption>
+                <img src="/demo/Bri dog1.png" alt="添麗輝護眼個案，眼簾發炎" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">眼簾發炎</figcaption>
               </figure>
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
-                <img src="/demo/Brisol dog 30 days.png" alt="狗狗滴用添麗輝™ 30 天後" className="h-72 w-full object-cover sm:h-80" />
-                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">第30天 - 護理後狀況</figcaption>
+                <img src="/demo/Bri dog 6days.png" alt="添麗輝護眼個案，使用六天" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">使用六天</figcaption>
+              </figure>
+              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
+                <img src="/demo/Bri dog 30days.png" alt="添麗輝護眼個案，使用三十天" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">使用三十天</figcaption>
               </figure>
             </div>
             <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
@@ -106,7 +110,7 @@ export default function ProductDetailPage() {
               <div className="mt-3 flex flex-wrap items-end justify-between gap-4 pr-28 sm:pr-36">
                 <div>
                   <h2 className="text-3xl font-extrabold text-cyberBlack">21 天改善個案</h2>
-                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">這個案例記錄狗狗在持續使用添麗輝™ 21天後</p>
+                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">這個案例記錄持續使用添麗輝™ 21天後</p>
                 </div>
                 <div className="absolute right-4 top-4 min-w-[6.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-3 py-3 text-center">
                   <p className="text-xs font-bold text-cyberGray">滴用時間</p>
@@ -208,6 +212,32 @@ export default function ProductDetailPage() {
             </div>
             <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重眼部症狀，請先諮詢獸醫。</p>
           </section>
+          <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
+            <div className="relative border-b border-cyberBorder px-7 py-7 sm:px-10">
+              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">BRI-SOL™ · SUCCESS CASE 09</p>
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4 pr-28 sm:pr-36">
+                <div>
+                  <h2 className="text-3xl font-extrabold text-cyberBlack">黑唐狗患白內障</h2>
+                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">個案記錄黑唐狗使用添麗輝護眼液一年後的眼部狀況及改善過程。</p>
+                </div>
+                <div className="absolute right-4 top-4 min-w-[6.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-3 py-3 text-center">
+                  <p className="text-xs font-bold text-cyberGray">使用時間</p>
+                  <p className="mt-1 text-2xl font-black text-cyberPurple">1 年</p>
+                </div>
+              </div>
+            </div>
+            <div className="grid gap-5 p-5 sm:grid-cols-2 sm:p-8">
+              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
+                <img src="/demo/Screenshot 2026-10-02 at 17.11.28.png" alt="黑唐狗患白內障，使用添麗輝護眼液前的眼部記錄" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">黑唐狗患白內障 · 使用前記錄</figcaption>
+              </figure>
+              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
+                <img src="/demo/Screenshot 2026-10-02 at 17.11.22.png" alt="黑唐狗使用添麗輝護眼液一年後的眼部記錄" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">使用添麗輝護眼液一年後 · 改善記錄</figcaption>
+              </figure>
+            </div>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作眼部狀況記錄參考，不能代替獸醫診斷或治療；白內障及其他眼部問題請先諮詢獸醫。</p>
+          </section>
           </div>
         ) : null}
         {product.slug === 'oti-dor' ? (
@@ -258,15 +288,15 @@ export default function ProductDetailPage() {
             <div className="grid gap-5 p-5 sm:grid-cols-3 sm:p-8">
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
                 <img src="/demo/immune-oti-case-before.png" alt={`${product.name} 個案護理前`} className="h-72 w-full object-cover sm:h-80" />
-                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">Before · 開始護理</figcaption>
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">開始護理</figcaption>
               </figure>
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
                 <img src="/demo/immune-oti-case-day-5.png" alt={`${product.name} 個案 5 days later`} className="h-72 w-full object-cover sm:h-80" />
-                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">5 days later · 五天後</figcaption>
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">五天後</figcaption>
               </figure>
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
                 <img src="/demo/immune-oti-case-day-20.png" alt={`${product.name} 個案 20 days later`} className="h-72 w-full object-cover sm:h-80" />
-                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">20 days later · 二十天後</figcaption>
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">二十天後</figcaption>
               </figure>
             </div>
             <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理前後記錄參考，不能代替獸醫診斷或治療；如有持續或嚴重皮膚問題，請先諮詢獸醫。</p>
@@ -302,6 +332,34 @@ export default function ProductDetailPage() {
               <div className="border border-cyberBorder bg-cyberPanelSoft px-4 py-3"><p className="text-xs text-cyberGray">34 天</p><p className="mt-1 font-bold text-cyberBlack">腳趾清晰長回</p></div>
             </div>
             <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">{SUCCESS_STORY_CREDIT}<br />個案圖片只作護理進程記錄參考，不能代替獸醫診斷或治療；如有腳趾感染、發炎或傷口問題，請先諮詢獸醫。</p>
+          </section>
+        ) : null}
+        {product.slug === 'immu-guard' ? (
+          <section className="mt-8 overflow-hidden border border-cyberBorder bg-white">
+            <div className="relative border-b border-cyberBorder px-7 py-7 sm:px-10">
+              <p className="text-xs font-bold tracking-[0.2em] text-cyberPurple">IMMU GUARD · SUCCESS CASE 03</p>
+              <div className="mt-3 flex flex-wrap items-end justify-between gap-4 pr-28 sm:pr-36">
+                <div>
+                  <h2 className="text-3xl font-extrabold text-cyberBlack">牙肉紅腫一個月改善個案</h2>
+                  <p className="mt-3 max-w-2xl text-sm leading-7 text-cyberGray">個案記錄 7 月牙肉紅腫，持續服用健體素一個月後，8 月觀察到牙肉改善。</p>
+                </div>
+                <div className="absolute right-4 top-4 min-w-[6.5rem] whitespace-nowrap border border-cyberPurple/30 bg-cyberPurple/10 px-3 py-3 text-center">
+                  <p className="text-xs font-bold text-cyberGray">觀察時間</p>
+                  <p className="mt-1 text-2xl font-black text-cyberPurple">1 個月</p>
+                </div>
+              </div>
+            </div>
+            <div className="grid gap-5 p-5 sm:grid-cols-2 sm:p-8">
+              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
+                <img src="/demo/Screenshot 2026-10-02 at 17.14.24.png" alt="健體素案例 7 月牙肉紅腫記錄" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">7 月 · 牙肉紅腫</figcaption>
+              </figure>
+              <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
+                <img src="/demo/Screenshot 2026-10-02 at 17.14.17.png" alt="服用健體素一個月後的牙肉狀況" className="h-72 w-full object-cover sm:h-80" />
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">8 月 · 服用健體素一個月，牙肉改善</figcaption>
+              </figure>
+            </div>
+            <p className="px-7 pb-7 text-xs leading-6 text-cyberGrayMuted sm:px-10">個案圖片只作護理進程記錄參考，不能代替獸醫診斷或治療；如有牙肉紅腫或口腔不適，請先諮詢獸醫。</p>
           </section>
         ) : null}
         {product.slug === 'hepa-guard' ? (
@@ -412,7 +470,7 @@ export default function ProductDetailPage() {
             <div className="grid gap-5 p-5 sm:grid-cols-2 sm:p-8">
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
                 <img src="/demo/urol before .png" alt="健腎素中風狗狗個案食用前" className="h-72 w-full object-cover sm:h-80" />
-                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">食用前 · 中風後活動狀況</figcaption>
+                <figcaption className="px-4 py-3 text-sm font-black text-cyberBlack">食用前 · 中風後需要輔助器</figcaption>
               </figure>
               <figure className="overflow-hidden border border-cyberBorder bg-cyberPanelSoft">
                 <img src="/demo/urol 11days.png" alt="健腎素中風狗狗個案食用 11 天後" className="h-72 w-full object-cover sm:h-80" />
